@@ -1,0 +1,13 @@
+[project]
+name = "weather-gov-api-mcp"
+version = "0.1.0"
+description = "MCP server for the weather.gov API API"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp>=2.3.0,<3",
+    "httpx>=0.28.1",
+]
+
+# Run with `uv run server.py`; this is an application, not an installable package.
+[tool.uv]
+package = false
